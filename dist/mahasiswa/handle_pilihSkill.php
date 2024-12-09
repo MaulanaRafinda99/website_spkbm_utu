@@ -51,9 +51,9 @@ $nilaiSkill11 = isset($_POST['nilai11']) ? $_POST['nilai11'] : 0;
 $nilaiSkill12 = isset($_POST['nilai12']) ? $_POST['nilai12'] : 0;
 
 // Hitung rata-rata nilai untuk setiap bidang skill
-$sistem_informasi_avg = ($nilaiSkill1 + $nilaiSkill2 + $nilaiSkill3 + $nilaiSkill4) / 4;
-$jaringan_komputer_avg = ($nilaiSkill5 + $nilaiSkill6 + $nilaiSkill7 + $nilaiSkill8) / 4;
-$rekayasa_perangkat_lunak_avg = ($nilaiSkill9 + $nilaiSkill10 + $nilaiSkill11 + $nilaiSkill12) / 4;
+$sistem_informasi_avg = $nilaiSkill1 + $nilaiSkill2 + $nilaiSkill3 + $nilaiSkill4;
+$jaringan_komputer_avg = $nilaiSkill5 + $nilaiSkill6 + $nilaiSkill7 + $nilaiSkill8;
+$rekayasa_perangkat_lunak_avg = $nilaiSkill9 + $nilaiSkill10 + $nilaiSkill11 + $nilaiSkill12;
 
 
 

@@ -116,72 +116,154 @@ $conn->close();
                 <div class="container mt-5">
                     <h5 class="mb-4">Form Input Nilai Mata Kuliah</h5>
                     <form action="handle_inputMK.php" method="POST">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course1">Dasar Pengembangan Sistem Informasi</label>
-                                    <input type="text" class="form-control" name="course1" id="course1" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course2">Basis Data</label>
-                                    <input type="text" class="form-control" name="course2" id="course2" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course3">Analisis dan Perancangan Sistem Informasi</label>
-                                    <input type="text" class="form-control" name="course3" id="course3" placeholder="Masukkan nilai skala 0-12" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course4">Keamanan Jaringan dan Data</label>
-                                    <input type="text" class="form-control" name="course4" id="course4" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course5">Jaringan Komputer</label>
-                                    <input type="text" class="form-control" name="course5" id="course5" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course6">Praktikum Jaringan Komputer</label>
-                                    <input type="text" class="form-control" name="course6" id="course6" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course7">Rekayasa Perangkat Lunak</label>
-                                    <input type="text" class="form-control" name="course7" id="course7" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course8">Data Mining</label>
-                                    <input type="text" class="form-control" name="course8" id="course8" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="course9">Kecerdasan Buatan</label>
-                                    <input type="text" class="form-control" name="course9" id="course9" placeholder="Masukkan nilai" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 text-right">
-                                <button type="submit" class="btn btn-primary">Simpan</button>
-                            </div>
-                        </div>
-                    </form>
+    <div class="row">
+        <!-- DPSI -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course1">Dasar Pengembangan Sistem Informasi</label>
+                <select class="form-control" name="course1" id="course1" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="12">A</option>
+                    <option value="10.5">B+</option>
+                    <option value="9">B</option>
+                    <option value="7.5">C+</option>
+                    <option value="6">C</option>
+                    <option value="3">D</option>
+                </select>
+            </div>
+        </div>
+        <!-- BASIS DATA -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course2">Basis Data</label>
+                <select class="form-control" name="course2" id="course2" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="1">D</option>
+                </select>
+            </div>
+        </div>
+        <!-- APSI -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course3">Analisis dan Perancangan Sistem Informasi</label>
+                <select class="form-control" name="course3" id="course3" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="12">A</option>
+                    <option value="10.5">B+</option>
+                    <option value="9">B</option>
+                    <option value="7.5">C+</option>
+                    <option value="6">C</option>
+                    <option value="3">D</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- KEAMANAN JARINGAN DAN DATA -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course4">Keamanan Jaringan dan Data</label>
+                <select class="form-control" name="course4" id="course4" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="12">A</option>
+                    <option value="10.5">B+</option>
+                    <option value="9">B</option>
+                    <option value="7.5">C+</option>
+                    <option value="6">C</option>
+                    <option value="3">D</option>
+                </select>
+            </div>
+        </div>
+        <!-- JARKOM -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course5">Jaringan Komputer</label>
+                <select class="form-control" name="course5" id="course5" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C+</option>
+                    <option value="4">C</option>
+                    <option value="1">D</option>
+                </select>
+            </div>
+        </div>
+        <!-- PRAK JARKOM -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course6">Praktikum Jaringan Komputer</label>
+                <select class="form-control" name="course6" id="course6" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="12">A</option>
+                    <option value="10.5">B+</option>
+                    <option value="9">B</option>
+                    <option value="7.5">C+</option>
+                    <option value="6">C</option>
+                    <option value="3">D</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- RPL -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course7">Rekayasa Perangkat Lunak</label>
+                <select class="form-control" name="course7" id="course7" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="12">A</option>
+                    <option value="10.5">B+</option>
+                    <option value="9">B</option>
+                    <option value="7.5">C+</option>
+                    <option value="6">C</option>
+                    <option value="3">D</option>
+                </select>
+            </div>
+        </div>
+        <!-- DATA MINING -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course8">Data Mining</label>
+                <select class="form-control" name="course8" id="course8" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="12">A</option>
+                    <option value="10.5">B+</option>
+                    <option value="9">B</option>
+                    <option value="7.5">C+</option>
+                    <option value="6">C</option>
+                    <option value="3">D</option>
+                </select>
+            </div>
+        </div>
+        <!-- KECERDASAN BUATAN -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="course9">Kecerdasan Buatan</label>
+                <select class="form-control" name="course9" id="course9" required>
+                    <option value="" disabled selected>Pilih nilai</option>
+                    <option value="12">A</option>
+                    <option value="10.5">B+</option>
+                    <option value="9">B</option>
+                    <option value="7.5">C+</option>
+                    <option value="6">C</option>
+                    <option value="3">D</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+    </div>
+</form>
+
                 </div>
             </main>
 

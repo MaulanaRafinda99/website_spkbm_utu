@@ -108,25 +108,25 @@ $conn->close();
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill1" name="skills[]" value="Analisa Sistem:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill1" name="skills[]" value="Analisa Sistem:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai1" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai1" value="0">
                                     <label class="form-check-label" for="skill1">Analisa Sistem</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill2" name="skills[]" value="Pengembangan Perangkat Lunak:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill2" name="skills[]" value="Pengembangan Perangkat Lunak:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai2" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai2" value="0">
                                     <label class="form-check-label" for="skill2">Pengembangan Perangkat Lunak</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill3" name="skills[]" value="Manajemen Proyek Teknologi Informasi:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill3" name="skills[]" value="Manajemen Proyek Teknologi Informasi:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai3" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai3" value="0">
                                     <label class="form-check-label" for="skill3">Manajemen Proyek Teknologi Informasi</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill4" name="skills[]" value="Pengelolaan Basis Data:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill4" name="skills[]" value="Pengelolaan Basis Data:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai4" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai4" value="0">
                                     <label class="form-check-label" for="skill4">Pengelolaan Basis Data</label>
@@ -134,25 +134,25 @@ $conn->close();
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill5" name="skills[]" value="Trouble Shooting Jaringan:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill5" name="skills[]" value="Trouble Shooting Jaringan:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai5" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai5" value="0">
                                     <label class="form-check-label" for="skill5">Trouble Shooting Jaringan</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill6" name="skills[]" value="Local Area Network:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill6" name="skills[]" value="Local Area Network:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai6" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai6" value="0">
                                     <label class="form-check-label" for="skill6">Local Area Network</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill7" name="skills[]" value="Administrasi Jaringan:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill7" name="skills[]" value="Administrasi Jaringan:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai7" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai7" value="0">
                                     <label class="form-check-label" for="skill7">Administrasi Jaringan</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill8" name="skills[]" value="Keamanan Jaringan dan Data:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill8" name="skills[]" value="Keamanan Jaringan dan Data:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai8" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai8" value="0">
                                     <label class="form-check-label" for="skill8">Keamanan Jaringan dan Data</label>
@@ -160,25 +160,25 @@ $conn->close();
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill9" name="skills[]" value="Pemrograman (Webphyton,Android):25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill9" name="skills[]" value="Pemrograman (Webphyton,Android):1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai9" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai9" value="0">
                                     <label class="form-check-label" for="skill9">Pemrograman (Webphyton,Android)</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill10" name="skills[]" value="Analisis dan Desain Perangkat Lunak:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill10" name="skills[]" value="Analisis dan Desain Perangkat Lunak:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai10" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai10" value="0">
                                     <label class="form-check-label" for="skill10">Analisis dan Desain Perangkat Lunak</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill11" name="skills[]" value="Pengembangan Perangkat Lunak Berbasis Proyek:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill11" name="skills[]" value="Pengembangan Perangkat Lunak Berbasis Proyek:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai11" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai11" value="0">
                                     <label class="form-check-label" for="skill11">Pengembangan Perangkat Lunak Berbasis Proyek</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="skill12" name="skills[]" value="Pengembangan Perangkat Lunak:25" onclick="updateCheckbox(this)">
+                                    <input type="checkbox" class="form-check-input" id="skill12" name="skills[]" value="Pengembangan Perangkat Lunak:1" onclick="updateCheckbox(this)">
                                     <input type="hidden" name="nilai12" value="0">
                                     <input type="hidden" class="hidden-skill" name="nilai12" value="0">
                                     <label class="form-check-label" for="skill12">Pengujian Perangkat Lunak</label>
@@ -212,7 +212,7 @@ $conn->close();
         function updateCheckbox(checkbox) {
             var hiddenInput = checkbox.parentNode.querySelector('.hidden-skill');
             if (checkbox.checked) {
-                hiddenInput.value = 25;
+                hiddenInput.value = 1;
             } else {
                 hiddenInput.value = 0;
             }
