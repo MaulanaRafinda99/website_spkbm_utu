@@ -65,7 +65,7 @@ $conn->close();
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                    <li><a class="dropdown-item" href="../logout.php">Logout</a></li>
                 </ul>
             </li>
         </ul>
@@ -200,12 +200,12 @@ $conn->close();
                 <label for="course6">Praktikum Jaringan Komputer</label>
                 <select class="form-control" name="course6" id="course6" required>
                     <option value="" disabled selected>Pilih nilai</option>
-                    <option value="12">A</option>
-                    <option value="10.5">B+</option>
-                    <option value="9">B</option>
-                    <option value="7.5">C+</option>
-                    <option value="6">C</option>
-                    <option value="3">D</option>
+                    <option value="4">A</option>
+                    <option value="3.5">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.5">C+</option>
+                    <option value="2">C</option>
+                    <option value="1">D</option>
                 </select>
             </div>
         </div>

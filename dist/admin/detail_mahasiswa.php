@@ -56,19 +56,33 @@ if (isset($_GET['nim'])) {
 }
 
 // Mendapatkan data nilai skill mahasiswa sesuai nim
-if (isset($_GET['nim'])) {
-    $nim = $_GET['nim'];
-    $sql = "SELECT * FROM nilai_skill WHERE nim = $nim";
-    $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        $nilai_skill = $result->fetch_assoc();
-    } else {
-        echo "Nilai Skill Tidak Tersedia";
-    }
-} else {
-    echo "NIM Mahasiswa Tidak Tersedia";
-}
+// Query untuk mengambil data nilai skill pengguna
+$sql = "SELECT * FROM nilai_skill WHERE nim = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $nim);
+$stmt->execute();
+$result = $stmt->get_result();
+$nilaiSkill = $result->fetch_assoc();
+
+$nilaiSI = $nilaiSkill['nilaiSI'];
+$nilaiJ = $nilaiSkill['nilaiJ'];
+$nilaiRPL = $nilaiSkill['nilaiRPL'];
+
+$stmt->close();
+// if (isset($_GET['nim'])) {
+//     $nim = $_GET['nim'];
+//     $sql = "SELECT * FROM nilai_skill WHERE nim = $nim";
+//     $result = $conn->query($sql);
+
+//     if ($result->num_rows > 0) {
+//         $nilai_skill = $result->fetch_assoc();
+//     } else {
+//         echo "Nilai Skill Tidak Tersedia";
+//     }
+// } else {
+//     echo "NIM Mahasiswa Tidak Tersedia";
+// }
 
 // Mendapatkan nilai tingkat minat mahasiswa sesuai nim
 if (isset($_GET['nim'])) {
@@ -218,7 +232,7 @@ if (isset($_GET['nim'])) {
             <div class="container emp-profile">
                 <form method="post">
                     <div class="row">
-                        
+
                         <div class="col-md-6 ml-4">
                             <div class="profile-head">
                                 <?php if (!empty($user)) : ?>
@@ -248,9 +262,7 @@ if (isset($_GET['nim'])) {
                                             <tbody>
                                                 <tr>
                                                     <td>Sistem Informasi</td>
-                                                    <?php if (!empty($nilai_mk)) : ?>
-                                                        <td><?php echo ($nilai_skill['nilaiSI']); ?></td>
-                                                    <?php endif; ?>
+                                                    <td><?php echo htmlspecialchars($nilaiSI); ?></td>
                                                     <?php if (!empty($nilai_mk)) : ?>
                                                         <td><?php echo ($nilai_mk['nilaiSI']); ?></td>
                                                     <?php endif; ?>
@@ -260,9 +272,7 @@ if (isset($_GET['nim'])) {
                                                 </tr>
                                                 <tr>
                                                     <td>Jaringan</td>
-                                                    <?php if (!empty($nilai_mk)) : ?>
-                                                        <td><?php echo ($nilai_skill['nilaiSI']); ?></td>
-                                                    <?php endif; ?>
+                                                    <td><?php echo htmlspecialchars($nilaiJ); ?></td>
                                                     <?php if (!empty($nilai_mk)) : ?>
                                                         <td><?php echo ($nilai_mk['nilaiJ']); ?></td>
                                                     <?php endif; ?>
@@ -272,9 +282,7 @@ if (isset($_GET['nim'])) {
                                                 </tr>
                                                 <tr>
                                                     <td>Rekayasa Perangkat Lunak</td>
-                                                    <?php if (!empty($nilai_mk)) : ?>
-                                                        <td><?php echo ($nilai_skill['nilaiSI']); ?></td>
-                                                    <?php endif; ?>
+                                                    <td><?php echo htmlspecialchars($nilaiRPL); ?></td>
                                                     <?php if (!empty($nilai_mk)) : ?>
                                                         <td><?php echo ($nilai_mk['nilaiRPL']); ?></td>
                                                     <?php endif; ?>
